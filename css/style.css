@@ -1,0 +1,134 @@
+/**/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    height: 95vh;
+    background-image: linear-gradient(to right bottom,rgba(126,213,111,0.6),rgba(40,180,131,0.6));
+    background-size: cover;
+    clip-path: polygon(0 0,100% 0,100% 75vh,0 100%);
+    position: relative;
+}
+.logo img{
+    height: 100px;
+}
+.product{
+    display: flex;
+    
+}
+.product img{
+    width: 200;
+    height: 100;
+    
+}
+.container{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,505);
+    text-align: center;
+}
+
+
+
+.heading{
+    color:#fff;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+.heading-title{
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 33px;
+    animation-name: hieu-ung-di-chuyen-sang-trai;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+.heading-sub{
+    display: block;
+    font-size: 20px;
+    letter-spacing: 120px;
+    animation-name: hieu-ung-di-chuyen-sang-phai;
+    animation-duration:2s;
+    animation-timing-function: ease-out;
+}
+.dropbtn {
+    background-color: #58257b;
+    color: white;
+    font-weight: bold;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Dùng trong <div> để định vị nội dung thả xuống */
+
+ul{
+    overflow: hidden;
+    background-color: lightblue;
+}
+li{
+   display: inline-block
+}
+li a{
+    display:inline-block;
+    padding: 10px;
+    color:black;
+    text-align: center;
+    padding: 14px 16px;
+}
+li a:hover{
+    color:yellow ;
+    background-color: #ce3e6e;
+    font-weight: bold; 
+}
+li a:active
+{
+    color: green;
+}
+.nut_dropdown {
+    background-color: #0080ff;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+ /* Thiết lập vị trí cho thẻ div với class dropdown*/
+  li.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+ /* Nội dung Dropdown */
+  .noidung_dropdown {
+    /*Ẩn nội dung các đường dẫn*/
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+ /* Thiết kế style cho các đường dẫn trong Dropdown */
+  .noidung_dropdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  /* thay đổi màu background khi hover vào đường dẫn */
+ .noidung_dropdown a:hover {background-color: #ddd;}
+ /* hiển thị nội dung dropdown khi hover */
+  .dropdown:hover .noidung_dropdown {display: block;}
+ /* Thay đổi màu background cho nút khi được hover */
+  .dropdown:hover .nut_dropdown {background-color: #00bfff;}
+
+.footer{
+    background-color: lightblue;
+    width: auto;
+    padding: 2px;
+}
